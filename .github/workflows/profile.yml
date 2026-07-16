@@ -1,0 +1,45 @@
+name: Update Profile Card
+
+on:
+  schedule:
+    # Run everyday at 00:00 UTC (05:30 IST)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'generate_profile.py'
+      - 'portrait.txt'
+      - '.github/workflows/profile.yml'
+
+jobs:
+  update-card:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Generate Profile Card
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python generate_profile.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dark.svg light.svg
+          if ! git diff --cached --exit-code; then
+            git commit -m "chore: auto-update profile card stats [skip ci]"
+            git push
+          else
+            echo "No changes in profile cards."
+          fi
