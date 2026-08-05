@@ -33,7 +33,7 @@ INFO = [
     ("__header__", "chappala sathwik", ""),
     ("__rule__", "", ""),
     ("Role",     "Backend Software Engineer", "val"),
-    ("Edu",      "B.Tech CSE (AI & ML) @ CMREC · Class of 2027", "val"),
+    ("Edu",      "B.Tech CSE (AI & ML) @ CMRCET · Class of 2027", "val"),
     ("Focus",    "Distributed Systems · Event-Driven Architecture", "accent"),
     ("__blank__", "", ""),
     ("__section__", "~/stack", ""),

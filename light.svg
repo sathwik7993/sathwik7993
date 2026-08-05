@@ -96,7 +96,7 @@
 <text x="448" y="117.5" class="key row" style="animation-delay:0.49s">Role</text>
 <text x="540" y="117.5" class="val row" style="animation-delay:0.49s">Backend Software Engineer</text>
 <text x="448" y="135.0" class="key row" style="animation-delay:0.56s">Edu</text>
-<text x="540" y="135.0" class="val row" style="animation-delay:0.56s">B.Tech CSE (AI &amp; ML) @ CMREC · Class of 2027</text>
+<text x="540" y="135.0" class="val row" style="animation-delay:0.56s">B.Tech CSE (AI &amp; ML) @ CMRCET · Class of 2027</text>
 <text x="448" y="152.5" class="key row" style="animation-delay:0.63s">Focus</text>
 <text x="540" y="152.5" class="acc row" style="animation-delay:0.63s">Distributed Systems · Event-Driven Architecture</text>
 <text x="448" y="180.0" class="sec row" style="animation-delay:0.70s">~/stack</text>
@@ -136,5 +136,5 @@
 <text x="448" y="577.5" class="key row" style="animation-delay:2.17s">Mail</text>
 <text x="540" y="577.5" class="acc row" style="animation-delay:2.17s">chappalasathwik@gmail.com</text>
 <text x="30" y="596" class="row" style="animation-delay:2.34s"><tspan class="key">➜</tspan><tspan class="acc" dx="8">~</tspan><tspan class="val" dx="8">open to Backend SDE / Distributed Systems roles</tspan><tspan class="cur" dx="8">█</tspan></text>
-<text x="946" y="596" class="mut" text-anchor="end">last updated 16 Jul 2026, 21:06 IST</text>
+<text x="946" y="596" class="mut" text-anchor="end">last updated 05 Aug 2026, 12:30 IST</text>
 </svg>
